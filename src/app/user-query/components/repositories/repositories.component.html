@@ -1,0 +1,46 @@
+<div class="row background">
+  <div class="col_s_12 col_m_12 col_l_2 repositories_data">
+
+    <div class="position">
+      <div class="width_btn_search">
+        <a mat-stroked-button (click)="redirect()" class="link_search"><img src="../../../../assets/search.svg"
+            alt="icon" class="img_search" />Nova busca</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="row background padding_bt" *ngIf="repositories">
+  <div class="col_s_12 col_m_12 col_l_5 repositories_data" *ngFor="let data of repositories">
+
+    <div class="position">
+      <div class="repos">
+
+        <a href="{{data.html_url}}" target="_blank">
+          <mat-card>
+            <div class="row">
+              <div class="col_s_12 col_m_12 col_l_3 flex_height" [ngSwitch]="data.language">
+                <img src="../../../../assets/typescript.svg" width="75" height="75" class="format_img"
+                  *ngSwitchCase="'TypeScript'" />
+                <img src="../../../../assets/javascript.svg" width="75" height="75" class="format_img"
+                  *ngSwitchCase="'JavaScript'" />
+                <img src="../../../../assets/java.svg" width="75" height="75" class="format_img"
+                  *ngSwitchCase="'Java'" />
+                <img src="../../../../assets/code.svg" width="75" height="75" class="format_img" *ngSwitchDefault />
+              </div>
+              <div class="col_s_12 col_m_12 col_l_8 flex_height">
+                <div class="description">
+                  <span class="name">{{data.name}}</span> <br>
+                  <span class="language">{{data.language}}</span> <br>
+                  <span class="description_data">{{data.description}}</span>
+                </div>
+              </div>
+            </div>
+          </mat-card>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>

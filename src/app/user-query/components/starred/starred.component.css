@@ -1,0 +1,180 @@
+@media only screen and (max-width: 1024px) {
+
+  .position {
+    padding: 1% auto;
+    width: 90%;
+    margin: 0px auto;
+  }
+
+  mat-card {
+    height: auto;
+    border: 1px solid #DCDCDC;
+    border-radius: 20px;
+  }
+
+  .repositories_data {
+    margin-top: 4%;
+  }
+
+  .description_data {
+    font-size: 14px;
+    width: 100%;
+    margin: 0.5% 0px;
+    width: 100%;
+  }
+
+  .description {
+    margin: 6% 0px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .style_row_card {
+    margin: auto;
+    height: 210px;
+    padding-bottom: 3%;
+  }
+
+  .stargazers_count {
+    display: flex;
+    justify-content: center;
+    margin: 0.5% 0px;
+  }
+
+}
+
+@media only screen and (min-width: 1025px) {
+
+  .position {
+    padding: 1% auto;
+    width: 90%;
+    margin-left: auto;
+  }
+
+  mat-card {
+    min-height: 100px;
+    height: auto;
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+  }
+
+  .repositories_data {
+    margin-top: 2%;
+    width: 47.5%;
+  }
+
+
+  .description_data {
+    font-size: 14px;
+    text-align: justify;
+    display: flex;
+    margin: 0.5% 0px;
+    width: 100%;
+  }
+
+  .description {
+    margin: auto 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .style_row_card {
+    margin: auto;
+    min-height: 90px;
+    height: 100px;
+    display: flex;
+    padding-bottom: 3%;
+  }
+
+  .stargazers_count {
+    display: flex;
+    margin: 1% 0px;
+  }
+
+}
+
+.repos {
+  width: 100%;
+}
+
+.background {
+  background-color: rgb(252, 252, 252);
+}
+
+.padding_bt {
+  padding-bottom: 2%;
+}
+
+.flex_height {
+  height: 90px;
+  display: flex;
+}
+
+.format_img {
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0.5% 0px;
+}
+
+.language {
+  font-size: 11px;
+  margin: 0.5% 0px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.row:after {
+  width: 0%;
+}
+
+.flex {
+  display: flex;
+}
+
+.width_btn_search {
+  width: fit-content;
+}
+
+.link_search {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.img_search {
+  margin-right: 5px;
+}
+
+.flow_root {
+  display: flow-root;
+}
+
+.style_col_card {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0px;
+}
+
+.login {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 3%;
+  font-weight: 400;
+}
+
+.style_col_description {
+  margin: auto 0px;
+}
+
+.margin_description {
+  margin: 0.5% 0px;
+}

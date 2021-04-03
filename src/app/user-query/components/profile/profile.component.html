@@ -1,0 +1,37 @@
+<div *ngIf="userData">
+
+    <mat-card class="background">
+        <div class="row">
+            <div class="col_12">
+                <img src="{{userData.avatar_url}}" class="img_avatar" alt="Imagem de Perfil" width="180" height="180" />
+            </div>
+        </div>
+        
+        <div class="row text_center">
+            <div class="col_12">
+                <span class="title">{{userData.name}}</span> <br>
+                <span class="color_greytone_01 font_size margin_login content_center">{{userData.login}}</span>
+            </div>
+        </div>
+        
+        <div class="row margin_bio">
+            <div class="col_12 content_center" >
+                <p class="color_greytone_01 bio_width">{{userData.bio}}</p>
+            </div>
+        </div>
+        
+        <div class="row color_greytone_01 margin_row_data">
+            <div class="col_12 content_center">
+                <ul class="bio_width">
+                    <li class="margin_bottom_data" *ngIf="userData.company"><img src="../../../../assets/building-regular.svg" width="20" height="20" class="margin_right_img" />{{userData.company}}</li>
+                    <li class="margin_bottom_data" *ngIf="userData.location"><img src="../../../../assets/map-marker-alt-solid.svg" width="20" height="20" class="margin_right_img" />{{userData.location}}</li>
+                    <li class="margin_bottom_data" *ngIf="userData.email"><img src="../../../../assets/envelope-regular.svg" width="20" height="20" class="margin_right_img" />{{userData.email}}</li>
+                    <li class="margin_bottom_data" *ngIf="userData.blog"><img src="../../../../assets/link-solid.svg" width="20" height="20" class="margin_right_img" />{{userData.blog}}</li>
+                    <li class="margin_bottom_data" *ngIf="userData.following"><img src="../../../../assets/user-friends-solid.svg" width="20" height="20" class="margin_right_img" />{{userData.following}} Seguindo</li>
+                    <li class="margin_bottom_data" *ngIf="userData.followers"><img src="../../../../assets/user-friends-solid.svg" width="20" height="20" class="margin_right_img" />{{userData.followers}} Seguidores</li>
+                </ul>                  
+            </div>
+        </div>
+    </mat-card>
+    
+</div>

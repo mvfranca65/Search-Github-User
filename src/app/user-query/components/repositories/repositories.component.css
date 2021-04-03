@@ -1,0 +1,123 @@
+@media only screen and (max-width: 1024px) {
+
+  .position {
+    padding: 1% auto;
+    width: 90%;
+    margin: 0px auto;
+  }
+
+  mat-card {
+    height: auto;
+    border: 1px solid #DCDCDC;
+    border-radius: 20px;
+  }
+
+  .repositories_data {
+    margin-top: 4%;
+  }
+
+  .description_data {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .description {
+    margin: auto 0px;
+    text-align: center;
+    width: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 1025px) {
+
+  .position {
+    padding: 1% auto;
+    width: 90%;
+    margin-left: auto;
+  }
+
+  mat-card {
+    min-height: 80px;
+    height: auto;
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+  }
+
+  .repositories_data {
+    margin-top: 2%;
+    width: 47.5%;
+  }
+
+
+  .description_data {
+    font-size: 14px;
+    text-align: justify;
+    display: flex;
+  }
+
+  .description {
+    margin: auto 0px;
+  }
+
+}
+
+.position_button {
+  padding: 1% auto;
+  width: 20%;
+  margin: 0px auto;
+}
+
+.repositories_data_button {
+  margin-top: 2%;
+  width: 47.5%;
+}
+
+.repos {
+  width: 100%;
+}
+
+.background {
+  background-color: rgb(252, 252, 252);
+}
+
+.padding_bt {
+  padding-bottom: 2%;
+}
+
+.flex_height {
+  height: 90px;
+  display: flex;
+}
+
+.format_img {
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.language {
+  font-size: 11px;
+}
+
+.width_btn_search {
+  width: fit-content;
+}
+
+.link_search {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.img_search {
+  margin-right: 5px;
+}
+
+p {
+  font-size: 16px;
+}

@@ -1,0 +1,46 @@
+@media only screen and (max-width: 1024px) {
+
+	#profile {
+		background-color: black;
+		width: 100%;
+		cursor: default;
+		height: 100%;
+	}
+	
+	#info {
+		position: absolute;
+		width: 100%;
+		cursor: default;
+		height: 100%;
+	}
+
+}
+
+@media only screen and (min-width: 1025px) {
+
+	#profile {
+		background-color: black;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 25%;
+		cursor: default;
+		height: 100%;
+	}
+
+	#info {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 75%;
+		cursor: default;
+		height: 100%;
+	}
+	
+}
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+<div class="row height background flex">
+  <div class="col_12 just_center margin_content">
+
+    <mat-card>
+      <div class="row">
+        <div class="col_s_12 col_m_12 col_l_12 just_center">
+          <img src="../../../../assets/itau.png" width="90" height="90">
+        </div>
+      </div>
+
+      <div class="row flex">
+        <div class="col_s_12 col_m_12 col_l_12 margin_search">
+
+          <div class="row">
+            <div class="col_12">
+              <div mat-dialog-content>
+                <p class="justify">Insira o perfil do usuário que deseja fazer a busca:</p>
+                <mat-form-field class="width">
+                  <input matInput [(ngModel)]="user">
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col_12 just_end">
+              <mat-dialog-actions>
+                <button mat-button [routerLink]="user" [disabled]="user == null || user == ''">Buscar</button>
+              </mat-dialog-actions>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </mat-card>
+
+  </div>
+</div>

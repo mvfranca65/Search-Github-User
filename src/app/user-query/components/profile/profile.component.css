@@ -1,0 +1,47 @@
+.img_avatar {
+    display: flex;
+    margin: 8% auto 10% auto;
+    border-radius: 50%;
+}
+
+ul li {
+    align-items: center;
+    display: flex;
+}
+
+.background {
+    background-color: black;
+}
+
+.content_center {
+    display: flex; 
+    justify-content: center
+}
+
+.font_size {
+    font-size: 18px;
+}
+
+.margin_login {
+    margin-top: 2%;
+}
+
+.margin_bio {
+    margin-top: 9%;
+}
+
+.bio_width {
+    width: 80%;
+}
+
+.margin_row_data {
+    margin: 6% 0px;
+}
+
+.margin_bottom_data {
+    margin-bottom: 2%;
+}
+
+.margin_right_img {
+    margin-right: 10px;
+}

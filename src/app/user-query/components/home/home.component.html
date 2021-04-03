@@ -1,0 +1,18 @@
+<div class="row padding_none" *ngIf="user">
+
+    <div class="col_s_12 col_m_12 col_l_3 padding_none">
+        <div id="profile">
+            <app-profile></app-profile>
+        </div> 
+    </div>
+
+    <div class="col_s_12 col_m_12 col_l_8 padding_none">
+        <div id="info">
+            <mat-tab-group mat-align-tabs="start">
+                <mat-tab label="Repos"><app-repositories></app-repositories></mat-tab>
+                <mat-tab label="Starred"><app-starred></app-starred></mat-tab>
+            </mat-tab-group>
+        </div>
+    </div>
+    
+</div>

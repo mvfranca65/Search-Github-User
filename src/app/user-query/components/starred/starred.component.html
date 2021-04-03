@@ -1,0 +1,42 @@
+<div class="row background flex">
+  <div class="col_s_12 col_m_12 col_l_2 repositories_data">
+
+    <div class="position">
+      <div class="width_btn_search">
+        <a mat-stroked-button (click)="redirect()" class="link_search"><img src="../../../../assets/search.svg"
+            alt="icon" class="img_search" />Nova busca</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="row background padding_bt flow_root" *ngIf="starred">
+  <div class="col_s_12 col_m_12 col_l_5 repositories_data" *ngFor="let data of starred">
+
+    <div class="position">
+      <div class="repos">
+
+        <a href="{{data.html_url}}" target="_blank">
+          <mat-card>
+            <div class="row style_row_card">
+              <div class="col_s_12 col_m_12 col_l_4 flex_height style_col_card">
+                <img src="{{data.owner.avatar_url}}" width="75" height="75" class="format_img" />
+                <span class="login">{{data.owner.login}}</span>
+              </div>
+              <div class="col_s_12 col_m_12 col_l_7 flex_height">
+                <div class="description">
+                  <span class="name" *ngIf="data.name">{{data.name}}</span>
+                  <span class="stargazers_count" *ngIf="data.stargazers_count"><img src="../../../../assets/star.svg"
+                      width="19" height="19" alt="Estrela" />{{data.stargazers_count}}</span>
+                  <span class="description_data" *ngIf="data.description">{{data.description}}</span>
+                </div>
+              </div>
+            </div>
+          </mat-card>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
