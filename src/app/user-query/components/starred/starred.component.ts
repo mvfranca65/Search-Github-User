@@ -14,7 +14,6 @@ export class StarredComponent implements OnInit {
   constructor(private http: UserQueryService, private route: ActivatedRoute, private navigate: Router) { }
 
   ngOnInit(): void {
-    console.log("Entrou");
     this.getStarred(this.route.snapshot.params.id);
   }
 
