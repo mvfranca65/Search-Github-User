@@ -19,6 +19,10 @@ import { MatCardModule } from '@angular/material/card';
 import { ProfileComponent } from './user-query/components/profile/profile.component';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
+import { EffectsModule } from '@ngrx/effects';
+import { UserQueryEffects } from './user-query/store/user-query.effects';
+import { StoreModule } from '@ngrx/store';
+import { UserQueryReducers } from './user-query/store/user-query.reducers';
 
 @NgModule({
   declarations: [
@@ -31,6 +35,9 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     BrowserModule,
+    StoreModule.forRoot({}),
+    StoreModule.forFeature('userQuery', UserQueryReducers),
+    EffectsModule.forRoot([UserQueryEffects]),
     RouterModule.forRoot(ROUTES),
     HttpClientModule,
     BrowserAnimationsModule,

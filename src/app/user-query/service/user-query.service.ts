@@ -12,13 +12,9 @@ export class UserQueryService {
   url = 'https://api.github.com/users/'
 
   // Obtem os dados pelo usuario 
-  getUser(user: string): Observable<any> {
-    return this.httpClient.get<any>(this.url + user)
-      .pipe(
-        retry(2),
-        catchError(this.handleError)
-      )
-  };
+  getUser(user: any): Observable<any> {
+    return this.httpClient.get<any>(this.url + user);
+  }
 
   getRepositories(user: string): Observable<any> {
     return this.httpClient.get<any>(this.url + user + "/repos")
